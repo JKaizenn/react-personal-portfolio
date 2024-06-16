@@ -26,7 +26,7 @@ export default function About() {
                 <section className="profile-image">
                     <h3>Profile Picture:</h3>
                     <div className="image-container">
-                        <img src="images/Profile_Picture.JPG" alt="Jessen Profile" loading="lazy" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Profile_Picture.JPG`} alt="Jessen Profile" loading="lazy" />
                     </div>
                 </section>
 

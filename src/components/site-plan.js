@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/siteplan-styles.css';
+
 export default function SitePlan() {
     return (
             <main>
@@ -41,11 +42,11 @@ export default function SitePlan() {
                     <div className="wireframe-container">
                         <div className="wireframe-item">
                             <h3>Mobile View</h3>
-                            <img src="images/wireframe-portrait.jpg" alt="Mobile Wireframe" loading="lazy" />
+                            <img src={`${process.env.PUBLIC_URL}/images/wireframe-portrait.jpg`} alt="Mobile Wireframe" loading="lazy" />
                         </div>
                         <div className="wireframe-item">
                             <h3>Desktop View</h3>
-                            <img src="images/wireframe-landscape.jpg" alt="Desktop Wireframe" loading="lazy" />
+                            <img src={`${process.env.PUBLIC_URL}/images/wireframe-landscape.jpg`} alt="Desktop Wireframe" loading="lazy" />
                         </div>
                     </div>
                 </section>
